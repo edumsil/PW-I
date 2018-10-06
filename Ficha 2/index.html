@@ -11,16 +11,10 @@
 
 <body>
     <div id="intro">
-        <!-- <h1>PRODUTO</h1>
-        <h2>Nome: {{ productName }}</h2>
-        <h2 v-html="productDesc"></h2>-->
         <h2>{{ negativo ? "Número Inválido !" : "" }}</h2>
         <h2 >{{ numero }}</h2>
         <button v-on:click="diminui" :disabled="desabilitar ? true : false">-</button>
         <button v-on:click="aumenta">+</button>
-        <!-- <h2>Disponibilidade: {{ productAvailability ? "Disponível" : "Não Disponível" }}</h2>
-        <h2><img v-bind:src="productImage"></h2>-->
-
     </div>
 
 
