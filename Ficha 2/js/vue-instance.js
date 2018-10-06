@@ -4,7 +4,6 @@ const vm = new Vue({
         numero: 0,
         negativo: false,
         desabilitar: false,
-        numeroGuardar: this.numero
     },
     created: function () {
         console.log("A instância Vue foi criada !")
