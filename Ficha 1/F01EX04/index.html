@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>F01EX04</title>
+    <script src="js/vue.js"></script>
+</head>
+
+<body>
+    <div id="intro">
+        <h1>PRODUTO</h1>
+        <h2>Nome: {{ productName }}</h2>
+        <h2 v-html="productDesc"></h2>
+        <h2 v-if="productPrice<1000">Preço: {{ productPrice }} €</h2>
+        <button v-on:click="restorePrice">CLICA</button>
+        <button v-on:click="buy">Comprar</button>
+        <h2>Disponibilidade: {{ productAvailability ? "Disponível" : "Não Disponível" }}</h2>
+        <h2><img v-bind:src="productImage"></h2>
+
+    </div>
+
+
+    <script src="js/vue-instance.js"></script>
+</body>
+
+</html>
