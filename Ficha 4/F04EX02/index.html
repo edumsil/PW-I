@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>F04EX02</title>
+    <script src="js/vue.js"></script>
+</head>
+
+<body>
+    <div id="intro">
+        <span v-if="schools.length==0">SEM ESCOLAS!</span>
+        <ul v-else>
+            <h2>{{schools.length}} Escolas do IPP</h2>
+            <li v-for="school in schools">
+                {{ school }}
+            </li>
+        </ul>
+        <button @click.once="addSchool('ESMAE')">ADD SCHOOL</button>
+    </div>
+    <script src="js/vue-instance.js"></script>
+</body>
+
+</html>
