@@ -10,6 +10,17 @@
 </head>
 
 <body>
+    <div id="intro">
+        <p v-bind:style="{color: textColor, 'font-size': fontSize+'px', 'background-color': backColor, visibility: show}">
+            {{msg}}
+        </p>
+        <button @click="formatTextColor('red')">RED</button>
+        <button @click="formatTextSize(30)">BIG</button>
+        <button @click="formatBackColor('yellow')">YELLOW</button>
+        <button @click="showHide()">SHOW/HIDE</button>
+    </div>
+
+
     <script src="js/vue-instance.js"></script>
 </body>
 
