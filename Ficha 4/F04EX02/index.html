@@ -13,12 +13,13 @@
     <div id="intro">
         <span v-if="schools.length==0">SEM ESCOLAS!</span>
         <ul v-else>
-            <h2>{{schools.length}} Escolas do IPP</h2>
-            <li v-for="school in schools">
+            <h2>{{filterSchools.length}} Escolas do IPP</h2>
+            <li v-for="school in filterSchools">
                 {{ school }}
             </li>
         </ul>
         <button @click.once="addSchool('ESMAE')">ADD SCHOOL</button>
+        <button @click="filterSchool('E')">FILTER SCHOOL</button>
     </div>
     <script src="js/vue-instance.js"></script>
 </body>
